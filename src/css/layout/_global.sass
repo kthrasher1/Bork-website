@@ -22,8 +22,8 @@ body
   display: none
 
 
-@include breakpoint(tablet)
+@include breakpoint(desktop)
   body
     background: linear-gradient(90deg, $white 50%, $main-background 50%)
   .content
-    flex-direction: row
+    @include display-flex(row)

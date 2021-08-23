@@ -48,8 +48,7 @@
       margin-bottom: 10px
       font-size: $font-size-lg
     .cart__footer__btn
-      width: fit-content
-      padding: 0 60px
+      width: 80%
       margin-top: 10px
       margin-bottom: 10px
       height: 50px
@@ -66,13 +65,19 @@
   transform: translate3d(10vw, 0, 0)
 
 
-@include breakpoint(tablet)
+@include breakpoint(desktop)
   .cart
     width: 25vw
-
   .cart--show
     z-index: 2
     transform: translate3d(75vw, 0, 0)
+
+@include breakpoint(tablet)
+  .cart
+    width: 60vw
+  .cart--show
+    z-index: 2
+    transform: translate3d(40vw, 0, 0)
 
 
 
