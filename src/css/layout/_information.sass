@@ -1,0 +1,25 @@
+.information
+  flex: 1
+  width: auto
+  height: auto
+  text-align: center
+  margin: 30px 30px
+  padding-bottom: 25px
+  font-family: $font-open-sans
+  .information__title
+    font-weight: $semi-bold
+    margin: 20px 0
+  .information__text
+    color: rgba($black, 0.5)
+    font-weight: $light
+
+
+@include breakpoint(desktop)
+  .information
+    @include display-flex(column)
+    .information__title
+      font-size: $font-size-x-x-lg
+    .information__text
+      padding: 0 15%
+
+

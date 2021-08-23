@@ -1,0 +1,26 @@
+.header
+  padding-top: 30px
+  margin: 0 30px
+  .nav
+    @include display-flex($justify: space-between)
+    position: relative
+    padding-bottom: 0
+    width: 100%
+    .cart__wrapper
+      @include display-flex()
+      .cart__img
+        width: 35px
+        height: 35px
+      .cart__counter
+        position: absolute
+        margin-top: 6px
+    .logo__wrapper
+      @include display-flex()
+      .logo__img
+        width: 100px
+        height: auto
+
+
+
+@include breakpoint(tablet)
+  .header

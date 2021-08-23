@@ -1,0 +1,27 @@
+
+// Mixin for responsive design
+@mixin breakpoint($point)
+  @if $point == large
+    @media only screen and (min-width: 1366px)
+    @content
+
+  @else if $point == desktop
+    @media only screen and (min-width: 1024px)
+      @content
+
+  @else if $point == tablet
+    @media only screen and (min-width: 600px)
+      @content
+
+@mixin display-flex($direction: row, $justify: center, $align: center)
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify
+  align-items: $align
+
+@mixin link-text-decoration($color: $black)
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  font-weight: $semi-bold
+  color: $color
+  border-bottom: $color 1px solid

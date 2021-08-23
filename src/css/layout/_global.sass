@@ -1,0 +1,28 @@
+body, html
+  width: auto
+  min-height: 100vh
+
+body
+  height: 100vh
+  width: auto
+  background: $white
+
+.content
+  height: 100vh
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  flex-basis: 0
+
+.show
+  display: inline-block
+
+.hidden
+  display: none
+
+
+@include breakpoint(tablet)
+  body
+    background: linear-gradient(90deg, $white 50%, $main-background 50%)
+  .content
+    flex-direction: row

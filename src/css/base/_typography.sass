@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap')
+
+$font-roboto: 'Roboto', sans-serif
+$font-open-sans: 'Open Sans', sans-serif
+
+$thin: 200
+$light: 300
+$normal: 400
+$semi-bold: 500
+$bold: 700
+
+$font-size: 1rem
+$font-size-lg: 1.25rem
+$font-size-med: 1.15rem
+$font-size-x-lg: 1.50rem
+$font-size-x-x-lg: 1.65rem
+$font-size-massive: 2.5em
+$font-size-sm: 0.875rem
+$font-size-x-sm: 0.700rem
+
+body
+  font-family: $font-roboto
+  font-weight: $normal
+  font-size: $font-size-sm
+  color: $black
+  line-height: 1.6
+
+h1
+  font-size: $font-size-x-lg
+  font-weight: $semi-bold
+
+h2
+  font-family: $font-open-sans
+  font-size: $font-size-med
+h3
+  font-family: $font-roboto
+  font-weight: $semi-bold
+  font-size: $font-size
+
+.text--accent
+  color: $accent-colour
+
+
+@include breakpoint(tablet)
+  h1
+    font-size: $font-size-massive
+
+  h2
+    font-size: $font-size-med
+
+  h3
+    font-size: $font-size-med
